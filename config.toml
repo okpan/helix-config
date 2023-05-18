@@ -1,11 +1,13 @@
-theme = "onedark"
+theme = "onedark" # 主题
 
-[editor]
+[editor] # 编辑器
 line-number = "relative"
 mouse = true
 bufferline = "always"
 
-[editor.statusline]
+
+
+[editor.statusline] # 底部状态行
 left = ["mode", "spinner"]
 center = ["file-name", "file-modification-indicator"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
@@ -14,7 +16,7 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-[editor.lsp]
+[editor.lsp] # 语言服务器
 enable = true
 display-messages = true
 auto-signature-help = true
@@ -23,11 +25,15 @@ display-signature-help-docs = true
 snippets = true
 
 
-[editor.cursor-shape]
+[editor.cursor-shape] # 光标形状
 insert = "bar"
 normal = "block"
 select = "underline"
 
-[editor.file-picker]
+[editor.file-picker] # 文件选择器
 hidden = false
 
+[editor.indent-guides] # 缩进参考线
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 0
